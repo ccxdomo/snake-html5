@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+    letter-spacing: 3px;
+}
+
+.score-display {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #00ff88;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+#gameCanvas {
+    border: 3px solid #00ff88;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.3), 
+                inset 0 0 30px rgba(0, 0, 0, 0.5);
+    background-color: #0a0a1a;
+    display: block;
+    margin: 0 auto;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls p {
+    color: #888;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+#restartBtn {
+    background: linear-gradient(135deg, #ff0066 0%, #ff4081 100%);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 102, 0.4);
+}
+
+#restartBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 102, 0.6);
+}
+
+#restartBtn:active {
+    transform: translateY(0);
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(26, 26, 46, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #ff0066;
+    box-shadow: 0 0 40px rgba(255, 0, 102, 0.5);
+}
+
+.game-over h2 {
+    color: #ff0066;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 20px rgba(255, 0, 102, 0.5);
+}
+
+.game-over p {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 550px) {
+    #gameCanvas {
+        width: 90vw;
+        height: 90vw;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
