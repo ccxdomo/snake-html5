@@ -1,4 +1,4 @@
-//**
+/**
  * Main entry point - game loop initialization and orchestration
  */
 
