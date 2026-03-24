@@ -2,8 +2,6 @@
 
 A classic Snake game built with HTML5 Canvas and vanilla JavaScript.
 
-![Snake Game](screenshot.png)
-
 ## Description
 
 This is a modern implementation of the classic Snake game that runs directly in your browser. Navigate the snake to eat apples and grow longer without hitting the walls or yourself!
